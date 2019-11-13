@@ -1,11 +1,16 @@
 <div class="container">
-  <div>
-    <%= simple_form_for @restaurant do |f| %>
-    <%= f.input :name %>
-    <%= f.input :address %>
-    <%= f.input :category %>
-    <%= f.input :stars %>
-    <%= f.submit %>
-    <% end %>
+  <div class="row">
+    <div class="col-sm-6">
+      <div>
+        <%= simple_form_for @restaurant do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :category %>
+        <%= f.input :phone_number %>
+        <%= f.input :stars %>
+        <%= f.submit %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

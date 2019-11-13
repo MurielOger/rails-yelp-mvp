@@ -1,14 +1,15 @@
-<div class="container">
-  <div>
-    <h1>All restaurants :</h1>
-      <ul>
-        <% @restaurants.each do |restaurant| %>
-          <li class="list-inline">
-          <%= link_to restaurant.name, restaurant_path(restaurant.id) %><br><br>
-          </li>
-        <% end %>
-      </ul>
+<div class="container m-3">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>All restaurants :</h1>
+        <ul>
+          <% @restaurants.each do |restaurant| %>
+            <li class="list-inline">
+            <%= link_to restaurant.name, restaurant_path(restaurant.id) %><br><br>
+            </li>
+          <% end %>
+        </ul>
+          <h2><%= link_to 'Add a new restaurant', new_restaurant_path, :class => "btn btn-primary" %></h2>
+    </div>
   </div>
-  <div><div p-5> <%= link_to 'Add a new restaurant', new_restaurant_path %></div>
-</div>
 </div>

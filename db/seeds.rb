@@ -14,18 +14,21 @@ restaurants_attributes = [
     name:         'Dishoom',
     address:      '7 Boundary St, London E2 7JE',
     category:     'Indian food',
+    phone_number: '0146223344',
     stars:        4
   },
   {
     name:         'Pizza East',
     address:      '56A Shoreditch High St, London E1 6PQ',
     category:     'Italian food',
+    phone_number: '0146223345',
     stars:        3
   },
   {
     name:         'Duong Hong',
     address:      '32 rue Louis Bonnet 75011 Paris',
     category:     'Viet food',
+    phone_number:  '0146223346',
     stars:        5
   }
 ]
